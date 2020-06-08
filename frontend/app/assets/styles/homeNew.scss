@@ -1,0 +1,552 @@
+@import "./_base";
+// .PreLoaderContainer {
+//     display: flex;
+//     width: 100%;
+//     height: 100vh;
+//     background-color: rgb(233, 233, 233);
+//     justify-content: center;
+//     align-items: center;
+//     .PreLoader {
+//         margin-top: -50px;
+//         position: fixed;
+//         cursor: pointer;
+//         height: 133px;
+//         width: 182px;
+//         background-size: 100% 100%;
+//         background-image: url('../images/home/preloader.png');
+//     }
+//     .nlpt {
+//         margin-top: 70px;
+//         animation: a-s .5s 0.5s 1 forwards;
+//         background-color: #1e2930;
+//         height: 2px;
+//         overflow: hidden;
+//         position: relative;
+//         width: 250px
+//     }
+//     .nlpt::before {
+//         animation: a-lb 15s linear forwards;
+//         background-color: $SECONDARY_COLOR;
+//         content: '';
+//         display: block;
+//         height: 100%;
+//         position: absolute;
+//         transform: translateX(-250px);
+//         width: 100%
+//     }
+//     @keyframes a-lb {
+//         0% {
+//             transform: translateX(-250px)
+//         }
+//         5% {
+//             transform: translateX(-190px)
+//         }
+//         15% {
+//             transform: translateX(-0px)
+//         }
+//         100% {
+//             transform: translateX(-0px)
+//         }
+//     }
+//     @keyframes a-s {
+//         100% {
+//             opacity: 1
+//         }
+//     }
+// }
+.homeWallpaperContaine {
+    padding-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-image: url('../images/home/homepage_final.jpg');
+    background-size: cover;
+    background-position: center;
+    #AnimatedText {
+        -moz-user-select: none;
+        -khtml-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        color: white;
+        font-weight: 750 !important;
+        font-size: 90px !important;
+        -webkit-text-stroke: 1px white;
+        -moz-text-stroke: 1px white;
+    }
+    span {
+        display: inline-block;
+        transition: all 1.2s cubic-bezier(0.775, -0.205, 0.005, 1.165);
+    }
+}
+
+.home-holder {
+    display: flex;
+    margin: 80px 0 80px 0;
+    justify-content: center;
+    width: 100%;
+}
+
+.home-container {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    .text {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        align-items: flex-start;
+        padding: 0 38px;
+        .title {
+            margin-bottom: 30px;
+        }
+        .desc {
+            text-align: justify;
+            font-weight: $NUNITO_REGULAR;
+            font-size: 15px;
+        }
+    }
+    .images {
+        display: flex;
+        margin-right: 30px;
+        .group {
+            height: 500px;
+            width: 500px;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+        .g1 {
+            background-image: url('../images/home/images-g-1.jpg');
+        }
+        .g2 {
+            background-image: url('../images/home/images-g-2.jpg');
+        }
+    }
+}
+
+.home-container.reverse {
+    flex-direction: row-reverse;
+    .images {
+        margin-left: 30px;
+        margin-right: 0;
+    }
+}
+
+.home-tradition-container {
+    display: flex;
+    padding: 80px 0 0 0;
+    background-image: linear-gradient(#f5f5f5, #fff);
+    flex-direction: column;
+    align-items: center;
+    .drop {
+        height: 2px;
+        background-image: linear-gradient(to right, $SECONDARY_COLOR, #f5f5f5) !important;
+    }
+    h6 {
+        margin-top: 10px;
+    }
+    .cards-container {
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        .cards {
+            display: flex;
+            .card {
+                color: inherit;
+                cursor: pointer;
+                flex-shrink: 0;
+                margin: 0 15px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                font-weight: 500;
+                width: 280px;
+                height: 360px;
+                background-color: white;
+                border-radius: 5px;
+                box-shadow: 0 10px 30px rgba($color: #000000, $alpha: 0.25);
+                transition-duration: $TRANSITION_SPEED;
+                overflow: hidden;
+                &:hover {
+                    transform: scale(1.05, 1.05);
+                    box-shadow: 0 10px 30px rgba($color: #000000, $alpha: 0.45);
+                }
+                p {
+                    margin: 10px;
+                }
+                .img {
+                    width: 100%;
+                    height: 100%;
+                    background-repeat: round;
+                }
+                .home_people_of_chennai {
+                    background-image: url('../images/home/home_people_of_chennai.jpg');
+                }
+                .home_festivals_of_chennai {
+                    background-image: url('../images/home/home_festivals_of_chennai.jpg');
+                }
+                .home_art_of_cheannai {
+                    background-image: url('../images/home/home_art_of_cheannai.jpg');
+                }
+            }
+        }
+    }
+}
+
+.spaceContainer {
+    margin-top: 50px;
+}
+
+.textpadding {
+    margin: 0 104px 0 104px;
+    font-size: 17px;
+    line-height: 30px;
+}
+
+.abouttextpadding {
+    font-size: 15px;
+    line-height: 30px;
+}
+
+.chennaiAbout {
+    height: 450px;
+    width: 100%;
+    display: flex;
+    .chennai_cuisine {
+        background-image: url('../images/home/food.jpg');
+    }
+    .tamil-container {
+        background-image: url('../images/home/tamil_language.jpg');
+    }
+    .transportation-container {
+        background-image: url('../images/home/transportation.jpg');
+    }
+    .history-container {
+        background-image: url('../images/home/history.jpg');
+    }
+    .chennaiAbout-container {
+        cursor: pointer;
+        flex: 1;
+        display: flex;
+        align-items: flex-end;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition-duration: $TRANSITION_SPEED;
+        &:hover {
+            .details-container {
+                .details {
+                    transform: scale(1.05, 1.05);
+                }
+            }
+        }
+        .details-container {
+            height: 50%;
+            width: 100%;
+            display: flex;
+            align-items: flex-end;
+            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+            transition-duration: $TRANSITION_SPEED;
+            .details {
+                opacity: 0.8;
+                transition-duration: $TRANSITION_SPEED;
+                .title {
+                    font-weight: $NUNITO_BOLD;
+                    font-size: 40px;
+                    color: white;
+                    margin-bottom: 40px;
+                }
+            }
+        }
+    }
+}
+
+.business-dots-home-container {
+    padding: 80px 20px 80px 20px;
+    .business-dots-card {
+        height: 500px;
+        width: 80%;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        background-size: 720px 450px;
+        background-position: right;
+        background-repeat: no-repeat;
+        background-color: #1e2930;
+        background-image: url('../images/home/business_dots_home.png');
+        box-shadow: 0 10px 50px rgba($color: #000000, $alpha: 0.25);
+    }
+    .content {
+        .data {
+            margin-left: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            color: #ffffff;
+            .title {
+                color: #ffffff !important;
+                font-size: 45px;
+                margin: 0;
+                dotsTage {
+                    font-weight: 600;
+                }
+            }
+            .desc {
+                font-weight: $NUNITO_REGULAR;
+                font-size: 16px;
+                margin: 0;
+            }
+            .business_dots_read_more_btn {
+                cursor: pointer;
+                border: 1px solid rgba(255, 255, 255, .8);
+                line-height: 43px;
+                border-radius: 5px;
+                text-align: center;
+                margin-top: 13px;
+                width: 130px;
+                font-weight: $MONT_SEMIBOLD;
+                font-size: 15px;
+                color: #ffffff;
+                transition-duration: $TRANSITION_SPEED;
+                &:hover {
+                    background-color: $SECONDARY_COLOR;
+                    color: white;
+                    border: 1px solid $SECONDARY_COLOR;
+                }
+            }
+        }
+    }
+}
+
+/* web */
+
+@media only screen and (min-width: 1200px) {
+    .limiter {
+        max-width: 1200px;
+    }
+    .limiter.big {
+        padding: 0 20px;
+        max-width: 1200px;
+    }
+}
+
+/* low res web + tab */
+
+@media only screen and (min-width: 1025px) and (max-width: 1199px) {
+    .images {
+        .group {
+            height: 500px !important;
+            width: 500px !important;
+        }
+    }
+}
+
+/* tabs */
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .homeWallpaperContaine {
+        #AnimatedText {
+            font-size: 70px !important;
+        }
+    }
+    .textpadding {
+        margin: 0 50px 0 50px;
+    }
+    .home-container.reverse {
+        margin-top: 30px;
+    }
+    .images {
+        .group {
+            height: 350px !important;
+            width: 350px !important;
+        }
+    }
+    .home-tradition-container {
+        .cards-container {
+            .card {
+                width: 230px !important;
+                height: 300px !important;
+            }
+        }
+    }
+    .chennaiAbout {
+        height: 300px;
+        .chennaiAbout-container {
+            .details-container {
+                .details {
+                    .title {
+                        font-size: 35px;
+                    }
+                }
+            }
+        }
+    }
+    .business-dots-home-container {
+        .business-dots-card {
+            height: 400px !important;
+            width: 750px !important;
+            background-size: 480px 300px;
+        }
+        .content {
+            .data {
+                .title {
+                    font-size: 40px !important;
+                }
+            }
+        }
+    }
+    .footer-container {
+        display: flex;
+        margin-left: 0 !important;
+        .detailed-container {
+            width: 100% !important;
+            padding-right: 0 !important;
+            justify-content: center;
+            .footer-row {
+                margin: 0 30px !important;
+            }
+        }
+        .logo-container {
+            display: none !important;
+        }
+    }
+    .home-ic-container {
+        .ic-container {
+            width: 100%;
+        }
+        .ic-box {
+            height: 330px;
+        }
+        .ic-image {
+            height: 230px;
+        }
+    }
+}
+
+/* phone */
+
+@media only screen and (max-width: 767px) {
+    .homeWallpaperContaine {
+        #AnimatedText {
+            font-size: 35px !important;
+        }
+    }
+    .textpadding {
+        margin: 0 10px 0 10px;
+    }
+    .home-container {
+        flex-direction: column-reverse;
+        .text {
+            width: 100%;
+            margin-top: 50px;
+            padding: 0 20px;
+        }
+        .images {
+            display: flex;
+            justify-content: center;
+            width: 100% !important;
+            margin: 0 !important;
+            .group {
+                height: 400px !important;
+                width: 500px !important;
+            }
+        }
+    }
+    .home-container.reverse {
+        flex-direction: column-reverse;
+        .text {
+            width: 100%;
+            margin-top: 50px;
+        }
+        .images {
+            display: flex;
+            justify-content: center;
+            width: 100% !important;
+            margin: 100px 0 0 0 !important;
+            .group {
+                height: 400px !important;
+                width: 500px !important;
+            }
+        }
+    }
+    .home-tradition-container {
+        .cards-container {
+            .cards {
+                flex-direction: column;
+            }
+            .card {
+                margin-bottom: 20px !important;
+                width: 320px !important;
+                height: 420px !important;
+            }
+        }
+    }
+    .business-dots-home-container {
+        padding: 50px 0 50px 0;
+        .business-dots-card {
+            align-items: flex-start;
+            justify-content: center;
+            height: 400px !important;
+            width: 90% !important;
+            background-size: 360px 225px;
+            background-position: bottom;
+        }
+        .content {
+            margin-top: 10px;
+            .data {
+                margin-left: 0;
+                align-items: center;
+                .title {
+                    font-size: 30px !important;
+                }
+                .desc {
+                    margin-top: 5px;
+                    font-size: 13px;
+                }
+                .business_dots_read_more_btn {
+                    line-height: 30px;
+                    font-size: 13px;
+                    width: 100px;
+                }
+            }
+        }
+    }
+    .chennaiAbout {
+        flex-direction: column !important;
+        .chennaiAbout-container {
+            .details-container {
+                .details {
+                    .title {
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+    }
+    .footer-container {
+        display: flex;
+        margin-left: 0 !important;
+        .detailed-container {
+            width: 100% !important;
+            padding-right: 0 !important;
+            justify-content: center;
+            .footer-row {
+                margin: 0 30px !important;
+            }
+        }
+        .logo-container {
+            display: none !important;
+        }
+    }
+    .home-ic-container {
+        .ic-container {
+            height: 100%;
+            width: 350px;
+            flex-direction: column;
+        }
+    }
+}

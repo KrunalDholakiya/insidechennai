@@ -1,0 +1,1320 @@
+@import "./_base";
+.sitemapBorder {
+    border-bottom: 1px solid rgb(214, 214, 214);
+    width: 90%;
+}
+
+.contactusLogo {
+    height: 212px;
+    width: 212px;
+    background-size: 100% 100%;
+    background-image: url('../images/home/preloader.png');
+}
+
+.smdetailed-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    padding: 30px 0px 30px 0px;
+    text-transform: capitalize;
+    .smfooter-row {
+        display: flex;
+        flex-direction: column;
+        .smtitle {
+            color: $PRIMARY-COLOR;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 20px;
+            &:hover {
+                text-decoration: underline;
+            }
+            a {
+                color: $PRIMARY-COLOR;
+            }
+        }
+        .smlist {
+            display: flex;
+            flex-direction: column;
+            margin-top: 15px;
+            .smdata {
+                cursor: pointer;
+            }
+            .smparagraph {
+                font-size: 16px;
+                transition-duration: $TRANSITION_SPEED;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+.normal-web-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 170px;
+    width: 100%;
+    overflow-x: hidden;
+    .chennaiTitleBar {
+        margin-top: -90px;
+        margin-bottom: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        height: 70px;
+        width: 100%;
+        background-image: linear-gradient(#ffffff, #f5f5f5);
+        .titleRow {
+            cursor: pointer;
+            justify-content: center;
+            height: 70px;
+            opacity: 1;
+            width: -webkit-fill-available;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+            transition: $TRANSITION_SPEED;
+            .subtitleLogo {
+                width: 25px;
+                height: 25px;
+                background-size: 100% 100%;
+            } //About Chennai Title Bar Logo
+            .subtitleLogo.history {
+                background-image: url('../images/icons/history.png');
+            }
+            .subtitleLogo.geography {
+                background-image: url('../images/icons/geography.png');
+            }
+            .subtitleLogo.economy {
+                background-image: url('../images/icons/economy.png');
+            }
+            .subtitleLogo.education {
+                background-image: url('../images/icons/education.png');
+            }
+            .subtitleLogo.transportation {
+                background-image: url('../images/icons/transportation.png');
+            }
+            .subtitleLogo.administration {
+                background-image: url('../images/icons/administration.png');
+            }
+            .subtitleLogo.health_care {
+                background-image: url('../images/icons/health_care.png');
+            }
+            .subtitleLogo.media {
+                background-image: url('../images/icons/media.png');
+            } //Discover Chennai Title Bar Logo
+            .subtitleLogo.attractions {
+                background-image: url('../images/icons/attractions.png');
+            }
+            .subtitleLogo.film_theater {
+                background-image: url('../images/icons/film_theater.png');
+            }
+            .subtitleLogo.historical_place {
+                background-image: url('../images/icons/historical_place.png');
+            }
+            .subtitleLogo.library_park {
+                background-image: url('../images/icons/library_park.png');
+            }
+            .subtitleLogo.market {
+                background-image: url('../images/icons/market.png');
+            }
+            .subtitleLogo.museum_exhibitions {
+                background-image: url('../images/icons/museum_exhibitions.png');
+            }
+            .subtitleLogo.outdoor_recreation {
+                background-image: url('../images/icons/outdoor_recreation.png');
+            }
+            .subtitleLogo.religious {
+                background-image: url('../images/icons/religious.png');
+            } //Tradition & Culture
+            .subtitleLogo.people_of_chennai {
+                background-image: url('../images/icons/peopleofchennai.png');
+            }
+            .subtitleLogo.chennai_cuisine {
+                background-image: url('../images/icons/chennaiCuisine.png');
+            }
+            .subtitleLogo.festivals_of_chennai {
+                background-image: url('../images/icons/FestivalOfChennai.png');
+            }
+            .subtitleLogo.tamil {
+                background-image: url('../images/icons/Tamil.png');
+            }
+            .subtitleLogo.art_of_chennai {
+                background-image: url('../images/icons/ArtFormOfChennai.png');
+            }
+            .subtitleLogo.cycle_of_life {
+                background-image: url('../images/icons/cycleOfLife.png');
+            }
+            .Subtitle {
+                margin-top: 5px;
+                color: #1e2930;
+                font-size: 11px;
+            }
+        }
+    }
+}
+
+.activeTbar {
+    position: absolute;
+    top: 135px;
+    width: 5%;
+    margin-top: 5px;
+    height: 1px;
+    background-image: linear-gradient(to left, #f5f5f5, $SECONDARY_COLOR, #f5f5f5);
+}
+
+.aActiveBar {
+    left: 3.7%;
+}
+
+.ftActiveBar {
+    left: 16.2%;
+}
+
+.hpActiveBar {
+    left: 28.8%;
+}
+
+.lpActiveBar {
+    left: 41.3%;
+}
+
+.mActiveBar {
+    left: 53.8%;
+}
+
+.meActiveBar {
+    left: 66.3%;
+}
+
+.orActiveBar {
+    left: 78.8%;
+}
+
+.rActiveBar {
+    left: 91.2%;
+}
+
+//tradition tBar
+.pocActiveBar {
+    left: 5.8%;
+}
+
+.ccActiveBar {
+    left: 22.5%;
+}
+
+.focActiveBar {
+    left: 39.2%;
+}
+
+.tActiveBar {
+    left: 56%;
+}
+
+.afocActiveBar {
+    left: 72.5%;
+}
+
+.colActiveBar {
+    left: 89%;
+}
+
+.bread-container {
+    margin-bottom: 25px;
+}
+
+.drop.orange {
+    height: 2px;
+    width: 13% !important;
+    margin-bottom: 20px !important;
+    background-image: linear-gradient(to right, $SECONDARY_COLOR, #ffffff);
+}
+
+.drop.orangeHome {
+    height: 2px;
+    width: 50% !important;
+    margin: -20px 0 20px 0 !important;
+    background-image: linear-gradient(to right, $SECONDARY_COLOR, #ffffff);
+}
+
+.drop.orangeInner {
+    height: 2px;
+    width: 13% !important;
+    margin-bottom: 20px !important;
+    background-color: $SECONDARY_COLOR;
+}
+
+.drop.orangePage {
+    height: 2px;
+    width: 13% !important;
+    background-image: linear-gradient(to right, $SECONDARY_COLOR, #ffffff);
+}
+
+.drop.orangeNowAndNow {
+    height: 2px;
+    width: 13% !important;
+    margin-bottom: 20px !important;
+    background-image: linear-gradient(to right, $SECONDARY_COLOR, #f5f5f5);
+}
+
+.limiter {
+    width: 100%;
+}
+
+.hero-card-container {
+    margin-top: 26px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .explore_image {
+        flex-shrink: 0;
+        height: 400px;
+        width: 618px;
+        border-radius: 5px;
+        background-repeat: no-repeat; //background-size: 100% 100%;
+        background-size: cover;
+        background-position: center;
+        background-color: #f5f5f5;
+    }
+    .explore_image_long {
+        flex-shrink: 0;
+        height: 400px;
+        width: 100%;
+        border-radius: 5px;
+        background-repeat: no-repeat; //background-size: 100% 100%;
+        background-size: cover;
+        background-position: center;
+        background-color: #f5f5f5;
+    } //About Chennai List Page
+    .explore_image.about_chennai_history {
+        background-image: url('../images/main_pages/about_chennai_history.jpg');
+    }
+    .explore_image.about_chennai_geography {
+        background-image: url('../images/main_pages/about_chennai_geography.jpg');
+    }
+    .explore_image.about_chennai_economy {
+        background-image: url('../images/main_pages/about_chennai_economy.jpg');
+    }
+    .explore_image.about_chennai_education {
+        background-image: url('../images/main_pages/about_chennai_education.jpg');
+    }
+    .explore_image.about_chennai_transportation {
+        background-image: url('../images/main_pages/about_chennai_transportation.jpg');
+    }
+    .explore_image.about_chennai_administration {
+        background-image: url('../images/main_pages/about_chennai_details_administration.jpg');
+    }
+    .explore_image.about_chennai_health_care {
+        background-image: url('../images/main_pages/about_chennai_health_care.jpg');
+    }
+    .explore_image.about_chennai_media {
+        background-image: url('../images/main_pages/about_chennai_media.jpg');
+    } //Discover Chennai List Page
+    .explore_image.discover_chennai_attraction {
+        background-image: url('../images/discover_chennai/attraction/MGR MEMORIAL.jpg');
+    }
+    .explore_image.discover_chennai_film_theater {
+        background-image: url('../images/discover_chennai/filmtheater/KALAKSHETRA-ARTS-ACADEMY.jpg');
+    }
+    .explore_image.discover_chennai_historical_place {
+        background-image: url('../images/discover_chennai/historicalplace/MAHABALIPURAM.jpg');
+    }
+    .explore_image.discover_chennai_library_parks {
+        background-image: url('../images/discover_chennai/librarypark/SENMOZHI-POONGA.jpg');
+    }
+    .explore_image.discover_chennai_market {
+        background-image: url('../images/discover_chennai/market/GEORGE-TOWN-MARKET-AND-BAZAAR.jpg');
+    }
+    .explore_image.discover_chennai_museums_exhibitions {
+        background-image: url('../images/discover_chennai/museumsexhibition/NATIONAL-ART-GALLERY.jpg');
+    }
+    .explore_image.discover_chennai_outdoor_recreation {
+        background-image: url('../images/discover_chennai/outdoorrecreation/GOLDEN-BEACH.jpg');
+    }
+    .explore_image.discover_chennai_religious {
+        background-image: url('../images/discover_chennai/religiious/THOUSAD-LIGHTS-MOSQUE.jpg');
+    } //Tradition & Culture List Page
+    .explore_image.tradition_culture_people_of_chennai {
+        background-image: url('../images/main_pages/tradition_culture_people_of_chennai.jpg');
+    }
+    .explore_image.tradition_culture_chennai_cuisine {
+        background-image: url('../images/main_pages/tradition_culture_chennai_cuisine.jpg');
+    }
+    .explore_image.tradition_culture_festivals_of_chennai {
+        background-image: url('../images/main_pages/tradition_culture_festivals_of_chennai.jpg');
+    }
+    .explore_image.tradition_culture_tamil {
+        background-image: url('../images/home/tamil_language.jpg');
+    }
+    .explore_image.tradition_culture_art_of_chennai {
+        background-image: url('../images/main_pages/tradition_culture_art_of_chennai.png');
+    }
+    .explore_image.tradition_culture_cycle_of_life {
+        background-image: url('../images/main_pages/tradition_culture_cycle_of_life.jpg');
+    } //About Chennai Details Page
+    .explore_image_long.about_chennai_details_geography {
+        background-image: url('../images/main_pages/about_chennai_details_geography.jpg');
+    }
+    .explore_image.about_chennai_details_climate {
+        background-image: url('../images/main_pages/about_chennai_details_climate.jpg');
+    }
+    .explore_image_long.about_chennai_details_economy {
+        background-image: url('../images/main_pages/about_chennai_details_economy.jpg');
+    }
+    .explore_image_long.about_chennai_details_education {
+        background-image: url('../images/main_pages/about_chennai_details_education.jpg');
+    }
+    .explore_image.about_chennai_details_air {
+        background-image: url('../images/main_pages/about_chennai_details_air.jpg');
+    }
+    .explore_image.about_chennai_details_rail {
+        background-image: url('../images/main_pages/about_chennai_details_rail.jpg');
+    }
+    .explore_image.about_chennai_details_metro {
+        background-image: url('../images/main_pages/about_chennai_details_metro.jpg');
+    }
+    .explore_image.about_chennai_details_sea {
+        background-image: url('../images/main_pages/about_chennai_details_sea.jpg');
+    }
+    .explore_image_long.about_chennai_details_road {
+        background-image: url('../images/main_pages/about_chennai_details_road.jpg');
+    }
+    .explore_image_long.about_chennai_details_administration {
+        background-image: url('../images/main_pages/about_chennai_details_administration.jpg');
+    }
+    .explore_image_long.about_chennai_details_health_care {
+        background-image: url('../images/main_pages/about_chennai_details_health_care.jpg');
+    }
+    .explore_image_long.about_chennai_details_media {
+        background-image: url('../images/main_pages/about_chennai_details_media.jpg');
+    } //Tradition & Culture Details Page
+    .explore_image.tradition_culture_details_clothing {
+        background-image: url('../images/main_pages/tradition_culture_details_clothing.jpg');
+    }
+    .explore_image_long.tradition_culture_details_religion_community {
+        background-image: url('../images/main_pages/tradition_culture_details_religion_community.jpg');
+    }
+    .explore_image.tradition_culture_details_filter_coffee {
+        background-image: url('../images/main_pages/tradition_culture_details_filter_coffee.jpg');
+    }
+    .explore_image.tradition_culture_details_idali_dosa_vada {
+        background-image: url('../images/main_pages/tradition_culture_details_idali_dosa_vada.jpg');
+    }
+    .explore_image.tradition_culture_details_full_meals {
+        background-image: url('../images/main_pages/tradition_culture_details_full_meals.jpg');
+    }
+    .explore_image.tradition_culture_details_chaat {
+        background-image: url('../images/main_pages/tradition_culture_details_chaat.jpg');
+    }
+    .explore_image.tradition_culture_details_pongal {
+        background-image: url('../images/main_pages/tradition_culture_details_pongal.jpg');
+    }
+    .explore_image.tradition_culture_details_karthigai_deepam {
+        background-image: url('../images/main_pages/tradition_culture_details_karthigai_deepam.jpg');
+    }
+    .explore_image.tradition_culture_details_eid {
+        background-image: url('../images/main_pages/tradition_culture_details_eid.jpg');
+    }
+    .explore_image.tradition_culture_details_christmas {
+        background-image: url('../images/main_pages/tradition_culture_details_christmas.jpg');
+    }
+    .explore_image_long.tradition_culture_details_tamil {
+        background-image: url('../images/home/tamil_language.jpg');
+    }
+    .explore_image.tradition_culture_details_carnatic_music {
+        background-image: url('../images/main_pages/tradition_culture_details_carnatic_music.jpg');
+    }
+    .explore_image.tradition_culture_details_bharatnatyam {
+        background-image: url('../images/main_pages/tradition_culture_details_bharatnatyam.jpg');
+    }
+    .explore_image.tradition_culture_details_chennai_sangamam {
+        background-image: url('../images/main_pages/tradition_culture_details_chennai_sangamam.jpg');
+    }
+    .explore_image.tradition_culture_details_naming_ceremony {
+        background-image: url('../images/main_pages/tradition_culture_details_naming_ceremony.jpg');
+    }
+    .explore_image.tradition_culture_details_manjal_neerattu_vizha {
+        background-image: url('../images/main_pages/tradition_culture_details_manjal_neerattu_vizha.jpg');
+    }
+    .explore_image.tradition_culture_details_weddings {
+        background-image: url('../images/main_pages/tradition_culture_details_weddings.jpg');
+    }
+    .explore_image.tradition_culture_details_death_ceremonies {
+        background-image: url('../images/main_pages/tradition_culture_details_death_ceremonies.jpg');
+    }
+    .desc,
+    .descLong {
+        text-align: justify;
+        padding: 0 30px;
+        font-weight: $NUNITO_REGULAR;
+        font-size: 15px;
+        line-height: 25px;
+    }
+}
+
+.hero-card-container.reverse {
+    flex-direction: row-reverse;
+}
+
+.discover-chennai-title {
+    padding: 10px;
+    font-weight: 500;
+    font-size: 40px;
+    color: $PRIMARY-COLOR;
+    opacity: 0.8;
+}
+
+.discover-chennai-title.mobile_title {
+    display: none;
+    font-weight: 500;
+    font-size: 40px;
+    color: $PRIMARY-COLOR;
+    opacity: 0.8;
+    text-align: center;
+}
+
+.discover-text-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.more {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 10px;
+    font-weight: $MONT_SEMIBOLD;
+    font-size: 15px;
+    color: $SECONDARY_COLOR;
+    &:hover {
+        opacity: 0.75;
+        transition-duration: $TRANSITION_SPEED_FAST;
+    }
+    .more-arrow {
+        float: right;
+        margin-left: 8px;
+        height: 19px;
+        width: 19px;
+        background-size: 100% 100%;
+        background-image: url('../images/home/view-more.png');
+    }
+}
+
+.spaceContainer {
+    margin-top: 40px;
+}
+
+.viewmorespaceContainer {
+    margin-top: 20px;
+}
+
+.spaceRemover {
+    margin-top: -130px;
+}
+
+.ContactUs {
+    font-size: 40px;
+}
+
+.climateSpace {
+    margin-top: -25px;
+}
+
+.innerSpaceRemove {
+    margin: -25px;
+}
+
+.spaceRemover1 {
+    margin-top: -50px;
+} //Attraction Images
+.anna_memorial {
+    background-image: url('../images/discover_chennai/attraction/ANNA-MEMORIAL.jpg');
+}
+
+.broken_bridge {
+    background-image: url('../images/discover_chennai/attraction/BROKEN-BRIDGE.jpg');
+}
+
+.chennai_central_railway_station {
+    background-image: url('../images/discover_chennai/attraction/CHENNAI-CENTRAL-RAILWAY-STATION.jpg');
+}
+
+.crocodile_bank {
+    background-image: url('../images/discover_chennai/attraction/CROCODILE-BANK.jpg');
+}
+
+.chennai_international_airport {
+    background-image: url('../images/discover_chennai/attraction/CHENNAI-INTERNATIONAL-AIRPORT.jpg');
+}
+
+.express_avenue {
+    background-image: url('../images/discover_chennai/attraction/EXPRESS-AVENUE.jpg');
+}
+
+.forum_viyaja_mall {
+    background-image: url('../images/discover_chennai/attraction/FORUM-VIYAJA-MALL.jpg');
+}
+
+.gandhi_mandapam {
+    background-image: url('../images/discover_chennai/attraction/GANDHI-MANDAPAM.jpg');
+}
+
+.high_court_madras {
+    background-image: url('../images/discover_chennai/attraction/HIGH-COURT(MADRAS).jpg');
+}
+
+.jayalalitha_memorial {
+    background-image: url('../images/inner/coming_soon.jpg');
+}
+
+.kathipara_junction {
+    background-image: url('../images/discover_chennai/attraction/KATHIPARA-JUNCTION.jpg');
+}
+
+.light_house {
+    background-image: url('../images/discover_chennai/attraction/LIGHT-HOUSE.jpg');
+}
+
+.mgr_memorial {
+    background-image: url('../images/discover_chennai/attraction/MGR MEMORIAL.jpg');
+}
+
+.m_a_chidambaram_stadium {
+    background-image: url('../images/discover_chennai/attraction/M.A.-CHIDAMBARAM-STADIUM.jpg');
+}
+
+.napier_bridge {
+    background-image: url('../images/discover_chennai/attraction/NAPIER-BRIDGE.jpg');
+}
+
+.royapuram_fishing_harbour {
+    background-image: url('../images/discover_chennai/attraction/ROYAPURAM-FISHING-HARBOUR.jpg');
+}
+
+.triumph_of_labour_statue {
+    background-image: url('../images/discover_chennai/attraction/TRIUMPH-OF-LABOUR-STATUE.jpg');
+}
+
+.university_of_madras {
+    background-image: url('../images/discover_chennai/attraction/UNIVERSITY-OF-MADRAS.jpg');
+}
+
+.valluvar_kottam {
+    background-image: url('../images/discover_chennai/attraction/VALLUVAR-KOTTAM.jpg');
+}
+
+.xime {
+    background-image: url('../images/discover_chennai/attraction/XAVIER-INSTITUTE-OF-MANAGEMENT-AND-ENTREPRENEURSHIP.jpg');
+}
+
+.ymca {
+    background-image: url('../images/discover_chennai/attraction/YMCA.jpg');
+} //Film & Theater Images
+.avm_studio {
+    background-image: url('../images/discover_chennai/filmtheater/AVM-STUDIOS.jpg');
+}
+
+.ega_theatre {
+    background-image: url('../images/inner/coming_soon.jpg');
+}
+
+.escape {
+    background-image: url('../images/inner/coming_soon.jpg');
+}
+
+.inox_theatre {
+    background-image: url('../images/inner/coming_soon.jpg');
+}
+
+.kalakshetra_art_academy {
+    background-image: url('../images/discover_chennai/filmtheater/KALAKSHETRA-ARTS-ACADEMY.jpg');
+}
+
+.mgr_film_city {
+    background-image: url('../images/discover_chennai/filmtheater/MGR-FLIM-CITY.jpg');
+}
+
+.palazzo {
+    background-image: url('../images/inner/coming_soon.jpg');
+}
+
+.prarthana_drive_in {
+    background-image: url('../images/inner/coming_soon.jpg');
+}
+
+.satyam {
+    background-image: url('../images/inner/coming_soon.jpg');
+} //Historical Place Images
+.amir_mahal {
+    background-image: url('../images/discover_chennai/historicalplace/AMIR-MAHAL.jpg');
+}
+
+.fort_st_george {
+    background-image: url('../images/discover_chennai/historicalplace/FORT-ST.-GEORGE.jpg');
+}
+
+.krishna_butterball {
+    background-image: url('../images/discover_chennai/historicalplace/KRISHNA-BUTTERBALL.jpg');
+}
+
+.mahabalipuram {
+    background-image: url('../images/discover_chennai/historicalplace/MAHABALIPURAM.jpg');
+}
+
+.ripon_building {
+    background-image: url('../images/discover_chennai/historicalplace/RIPON-BUILDING.jpg');
+}
+
+.sadras {
+    background-image: url('../images/discover_chennai/historicalplace/SADRAS.jpg');
+}
+
+.senate_house {
+    background-image: url('../images/discover_chennai/historicalplace/SENATE-HOUSE.jpg');
+}
+
+.war_memorial {
+    background-image: url('../images/discover_chennai/historicalplace/WAR-MEMORIAL.jpg');
+} //Library & Park Images
+.anna_nagar_tower_park {
+    background-image: url('../images/discover_chennai/librarypark/ANNANAGAR-TOWER-PARK.jpg');
+}
+
+.arignar_anna_zoological_park {
+    background-image: url('../images/discover_chennai/librarypark/ARIGNAR-ANNA-ZOOLOGICAL-PARK.jpg');
+}
+
+.anna_centenary_library {
+    background-image: url('../images/discover_chennai/librarypark/ANNA-CENTENARY-LIBRARY.jpg');
+}
+
+.conemera_public_library {
+    background-image: url('../images/discover_chennai/librarypark/CONEMERA-PUBLIC-LIBRARY.jpg');
+}
+
+.guindy_national_park {
+    background-image: url('../images/discover_chennai/librarypark/GUINDY-NATIONAL-PARK.jpg');
+}
+
+.panagal_park {
+    background-image: url('../images/discover_chennai/librarypark/PANAGAL-PARK.jpg');
+}
+
+.senmozhi_poonga {
+    background-image: url('../images/discover_chennai/librarypark/SENMOZHI-POONGA.jpg');
+}
+
+.theosophical_society_india {
+    background-image: url('../images/discover_chennai/librarypark/THEOSOPHICAL-SOCIETY-OF-INDIA.jpg');
+} //Market Images
+.burma_bazaar {
+    background-image: url('../images/inner/coming_soon.jpg');
+}
+
+.george_town_market_bazaar {
+    background-image: url('../images/discover_chennai/market/GEORGE-TOWN-MARKET-AND-BAZAAR.jpg');
+}
+
+.koyembedu {
+    background-image: url('../images/discover_chennai/market/KOYEMBEDU.jpg');
+}
+
+.pudupet_market {
+    background-image: url('../images/inner/coming_soon.jpg');
+}
+
+.ranganathan_street {
+    background-image: url('../images/discover_chennai/market/RANGANATHAN-STREET.jpg');
+}
+
+.zam_bazzar {
+    background-image: url('../images/inner/coming_soon.jpg');
+} //Museums & Exhibitions Images
+.birla_planetarium {
+    background-image: url('../images/discover_chennai/museumsexhibition/BIRLA-PLANETARIUM.jpg');
+}
+
+.cholamandal_artist_village {
+    background-image: url('../images/inner/coming_soon.jpg');
+}
+
+.dakshin_chitra {
+    background-image: url('../images/discover_chennai/museumsexhibition/DAKSHIN-CHITRA.jpg');
+}
+
+.government_museum {
+    background-image: url('../images/discover_chennai/museumsexhibition/GOVERNMENT-MUSEUM.jpg');
+}
+
+.lalith_kala_academy {
+    background-image: url('../images/inner/coming_soon.jpg');
+}
+
+.national_art_gallery {
+    background-image: url('../images/discover_chennai/museumsexhibition/NATIONAL-ART-GALLERY.jpg');
+}
+
+.railway_museum {
+    background-image: url('../images/discover_chennai/museumsexhibition/RAILWAY-MUSEUM.jpg');
+}
+
+.vivekanand_museum {
+    background-image: url('../images/discover_chennai/museumsexhibition/VIVEKANAND-MUSEUM.jpg');
+} //Outdoor & Recreation Images
+.adventure_zone {
+    background-image: url('../images/inner/coming_soon.jpg');
+}
+
+.besant_nagar_beach {
+    background-image: url('../images/inner/coming_soon.jpg');
+}
+
+.breezy_beach {
+    background-image: url('../images/discover_chennai/outdoorrecreation/BREEZY-BEACH.jpg');
+}
+
+.chembarambakkam_lake {
+    background-image: url('../images/discover_chennai/outdoorrecreation/CHEMBARAMBAKKAM-LAKE.jpg');
+}
+
+.chennai_snake_park_trust {
+    background-image: url('../images/discover_chennai/outdoorrecreation/CHENNAI-SNAKE-PARK-TRUST.jpg');
+}
+
+.chetpet_eco_park {
+    background-image: url('../images/discover_chennai/outdoorrecreation/CHETPET-ECO-PARK.jpg');
+}
+
+.covelong_beach {
+    background-image: url('../images/discover_chennai/outdoorrecreation/COVELONG-BEACH.jpg');
+}
+
+.east_coast_road {
+    background-image: url('../images/discover_chennai/outdoorrecreation/EAST-COAST-ROAD.jpg');
+}
+
+.golden_beach {
+    background-image: url('../images/discover_chennai/outdoorrecreation/GOLDEN-BEACH.jpg');
+}
+
+.krishkinta {
+    background-image: url('../images/discover_chennai/outdoorrecreation/KISHKINTA.jpg');
+}
+
+.marina_beach {
+    background-image: url('../images/discover_chennai/outdoorrecreation/MARINA-BEACH.jpg');
+}
+
+.mattukadu {
+    background-image: url('../images/inner/coming_soon.jpg');
+}
+
+.mgm_dizzee_world {
+    background-image: url('../images/discover_chennai/outdoorrecreation/MGM-DIZZEE-WORLD.jpg');
+}
+
+.nettukuppam_beach {
+    background-image: url('../images/inner/coming_soon.jpg');
+}
+
+.odiyur_lake {
+    background-image: url('../images/discover_chennai/outdoorrecreation/ODIYUR-LAKE.jpg');
+}
+
+.pullicat_lake_bird_sanctury {
+    background-image: url('../images/discover_chennai/outdoorrecreation/PULLICAT-LAKE-AND-BIRD-SANCTURY.jpg');
+}
+
+.queens_land {
+    background-image: url('../images/discover_chennai/outdoorrecreation/QUEENS-LAND.jpg');
+}
+
+.surfing_covelong_point {
+    background-image: url('../images/inner/coming_soon.jpg');
+}
+
+.urapakkam_lake {
+    background-image: url('../images/inner/coming_soon.jpg');
+}
+
+.wild_tribe_ranch {
+    background-image: url('../images/inner/coming_soon.jpg');
+} //Religious Images
+.baps_swaminarayan_mandir {
+    background-image: url('../images/discover_chennai/religiious/baps_chennai.jpg');
+}
+
+.aanjaneya_temple {
+    background-image: url('../images/inner/coming_soon.jpg');
+}
+
+.annai_velankani_church {
+    background-image: url('../images/discover_chennai/religiious/ANNAI-VELANKANI-CHURCH.jpg');
+}
+
+.ashtalakshmi_temple {
+    background-image: url('../images/inner/coming_soon.jpg');
+}
+
+.iskon_temple {
+    background-image: url('../images/discover_chennai/religiious/ISKON-TEMPLE.jpg');
+}
+
+.kalikambal_temple {
+    background-image: url('../images/discover_chennai/religiious/KALIKAMBAL-TEMPLE.jpg');
+}
+
+.kapaleeshwar_temple {
+    background-image: url('../images/discover_chennai/religiious/KAPALEESHWAR-TEMPLE.jpg');
+}
+
+.little_mount {
+    background-image: url('../images/inner/coming_soon.jpg');
+}
+
+.luz_church {
+    background-image: url('../images/discover_chennai/religiious/LUZ-CHURCH.jpg');
+}
+
+.marundeeshwar_temple {
+    background-image: url('../images/discover_chennai/religiious/MARUNDEESHWAR-TEMPLE.jpg');
+}
+
+.parthasarathy_temple {
+    background-image: url('../images/discover_chennai/religiious/PARTHASARATHY-TEMPLE.jpg');
+}
+
+.santhome_cathedral_basilica {
+    background-image: url('../images/discover_chennai/religiious/SANTHOME-CATHEDRAL-BASILICA.jpg');
+}
+
+.shirdi_saibaba_temple {
+    background-image: url('../images/inner/coming_soon.jpg');
+}
+
+.thousad_lights_mosque {
+    background-image: url('../images/discover_chennai/religiious/THOUSAD-LIGHTS-MOSQUE.jpg');
+}
+
+.vadapalani_murugan_temple {
+    background-image: url('../images/discover_chennai/religiious/VADAPALANI-MURUGAN-TEMPLE.jpg');
+}
+
+.vellankani_shrine {
+    background-image: url('../images/inner/coming_soon.jpg');
+}
+
+.wallajah_mosque {
+    background-image: url('../images/discover_chennai/religiious/WALLAJAH-MOSQUE.jpg');
+}
+
+.list_item_container {
+    height: 300px;
+    width: 100%;
+    display: flex;
+    .list_item_row {
+        cursor: pointer;
+        flex: 1;
+        display: flex;
+        align-items: flex-end;
+        background-position: center;
+        background-size: cover;
+        margin: 10px;
+        background-repeat: no-repeat;
+        border-radius: 5px;
+        transition-duration: $TRANSITION_SPEED;
+        &:hover {
+            box-shadow: 0 10px 30px rgba($color: #000000, $alpha: 1);
+            .details-container {
+                .details {
+                    transform: scale(1.05, 1.05);
+                }
+            }
+        }
+        .details-container {
+            border-radius: 5px;
+            height: 101%;
+            width: 100%;
+            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+            transition-duration: $TRANSITION_SPEED;
+            .details {
+                margin-bottom: -150px;
+                transition-duration: $TRANSITION_SPEED;
+                .title {
+                    margin-bottom: 0;
+                    font-weight: $NUNITO_BOLD;
+                    font-size: 30px;
+                    color: white;
+                }
+                .desc {
+                    font-weight: $NUNITO_REGULAR;
+                    font-size: 16px;
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+.last_child_container {
+    height: 300px;
+    width: 50%;
+    display: flex;
+    .list_item_row {
+        cursor: pointer;
+        flex: 1;
+        display: flex;
+        align-items: flex-end;
+        background-position: center;
+        background-size: cover;
+        margin: 10px;
+        background-repeat: no-repeat;
+        border-radius: 5px;
+        transition-duration: $TRANSITION_SPEED;
+        &:hover {
+            box-shadow: 0 10px 30px rgba($color: #000000, $alpha: 1);
+            .details-container {
+                .details {
+                    transform: scale(1.05, 1.05);
+                }
+            }
+        }
+        .details-container {
+            border-radius: 5px;
+            height: 101%;
+            width: 100%;
+            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+            transition-duration: $TRANSITION_SPEED;
+            .details {
+                margin-bottom: -150px;
+                transition-duration: $TRANSITION_SPEED;
+                .title {
+                    margin-bottom: 0;
+                    font-weight: $NUNITO_BOLD;
+                    font-size: 30px;
+                    color: white;
+                }
+                .desc {
+                    font-weight: $NUNITO_REGULAR;
+                    font-size: 16px;
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+.inner-web-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    width: 100%;
+    overflow-x: hidden;
+    background-image: linear-gradient( rgb(219, 219, 219), #ffffff 50%);
+    .LocationFont {
+        color: #000000 !important;
+    }
+    .inner-page-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .inner_image {
+            -webkit-touch-callout: none;
+            margin-top: 25px;
+            height: 100%;
+            width: 900px;
+            background-size: 100% 100%;
+            border-radius: 5px;
+            overflow: hidden;
+            transition-duration: $TRANSITION_SPEED;
+            background-color: #f5f5f5;
+        }
+        .desc {
+            margin-top: 50px;
+            padding: 0 4%;
+            font-weight: $NUNITO_REGULAR;
+            font-size: 18px;
+            text-align: justify;
+            line-height: 40px;
+        }
+    }
+} // low res web + tab
+@media only screen and (min-width: 1025px) and (max-width: 1220px) {
+    .thumb-card-container {
+        .thumb-board {
+            height: 240px;
+            width: 240px;
+        }
+    }
+    .hero-card-container {
+        margin: 26px 30px 50px 30px;
+        .explore_image {
+            height: 330px;
+            width: 510px;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 987px) {
+    .activeTbar {
+        top: 141px;
+    }
+} // tabs
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .thumb-card-row {
+        margin-top: 0;
+        display: flex;
+        flex-direction: column !important;
+        align-items: center;
+    }
+    .thumb-card-container {
+        margin-top: 50px;
+        width: 650px;
+        .thumb-board {
+            height: 240px;
+            width: 240px;
+        }
+    }
+    .hero-card-container {
+        .desc {
+            padding: 0;
+        }
+        .descLong {
+            padding: 0;
+        }
+    }
+    .discover-chennai-title.mobile_title {
+        display: block;
+    }
+    .discover-chennai-title {
+        display: none;
+    }
+    .hero-card-container,
+    .hero-card-container.reverse {
+        flex-direction: column;
+        margin: 30px;
+        .explore_image {
+            height: 330px;
+            width: 100%;
+        }
+        .desc,
+        .descLong {
+            padding: 30px 0 30px 0;
+        }
+        &:last-child {
+            .desc,
+            .descLong {
+                padding-bottom: 0;
+            }
+        }
+    }
+    .inner-web-container {
+        .inner-page-container {
+            .inner_image {
+                height: 100%;
+                width: 92%;
+                img {
+                    height: 100%;
+                    width: 100%;
+                }
+                &:hover {
+                    box-shadow: none;
+                }
+            }
+            .desc {
+                font-size: 18px;
+                line-height: 30px;
+            }
+        }
+    }
+} // phone
+@media only screen and (max-width: 767px) {
+    .smdetailed-container {
+        padding-left: 5px;
+        padding-right: 5px;
+        .smfooter-row {
+            .smtitle {
+                font-size: 13px;
+            }
+            .smlist {
+                margin-top: 7.5px;
+                .smparagraph {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+    .ContactUs {
+        font-size: 30px;
+    }
+    .drop.orange,
+    .drop.orangeInner,
+    .drop.orangePage {
+        width: 25% !important;
+    }
+    .viewmorespaceContainer {
+        margin-top: 0;
+    }
+    .activeTbar {
+        top: 133px;
+    }
+    .normal-web-container {
+        .chennaiTitleBar {
+            .titleRow {
+                padding: 10px;
+                .subtitleLogo {
+                    width: 28px;
+                    height: 28px;
+                }
+                .Subtitle {
+                    display: none;
+                }
+            }
+        }
+    }
+    .list_item_container {
+        display: flex;
+        flex-direction: column;
+        height: 425px;
+        .list_item_row {
+            .details-container {
+                .details {
+                    margin-bottom: -125px;
+                    .title {
+                        font-size: 20px;
+                    }
+                    .desc {
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+    .last_child_container {
+        display: flex;
+        flex-direction: column;
+        height: 212px;
+        width: 100%;
+        .list_item_row {
+            .details-container {
+                .details {
+                    margin-bottom: -125px;
+                    .title {
+                        font-size: 20px;
+                    }
+                    .desc {
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+    .normal-web-container {
+        .aboutchennaiTitle,
+        .discoverchennaiTitle {
+            padding: 0;
+        }
+    }
+    .thumb-card-row {
+        margin-top: 0px;
+        display: flex;
+        flex-direction: column !important;
+        align-items: center;
+    }
+    .thumb-card-container {
+        margin-top: 50px;
+        width: 80%;
+        .thumb-board {
+            height: 200px;
+            width: 200px;
+        }
+        .data {
+            padding: 15px;
+        }
+    }
+    .hero-card-container {
+        .desc {
+            padding: 0;
+        }
+        .descLong {
+            padding: 0;
+        }
+    }
+    .discover-chennai-title.mobile_title {
+        display: block;
+    }
+    .discover-chennai-title {
+        display: none;
+    }
+    .hero-card-container,
+    .hero-card-container.reverse {
+        flex-direction: column;
+        margin: 30px;
+        margin-top: 0;
+        .explore_image_long,
+        .explore_image {
+            height: 180px;
+            width: 100%;
+        }
+        .desc,
+        .descLong {
+            padding: 20px 0 30px 0;
+            word-break: break-word;
+        }
+        &:last-child {
+            .desc,
+            .descLong {
+                padding-bottom: 0;
+            }
+        }
+    }
+    .inner-web-container {
+        .inner-page-container {
+            .inner_image {
+                height: 50%;
+                width: 92%;
+                img {
+                    height: 100%;
+                    width: 100%;
+                }
+                &:hover {
+                    box-shadow: none;
+                }
+            }
+            .desc {
+                font-size: 15px;
+                line-height: 25px;
+            }
+        }
+    }
+}
+
+.h3-desc {
+    p {
+        padding: 15px;
+        margin-bottom: 15px;
+        border-bottom: 1px solid #ddd;
+        text-align: justify;
+        font-weight: $NUNITO_REGULAR;
+        font-size: 15px;
+        color: #333;
+        &:last-child {
+            border: 0;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.timeline {
+    width: 90% !important;
+}

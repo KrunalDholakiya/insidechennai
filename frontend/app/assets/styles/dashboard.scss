@@ -1,0 +1,264 @@
+@import "./_base";
+.dashboardContainer {
+    flex: 1; // height: 100%;
+    // width: 100%;
+    display: flex;
+    flex-direction: column; // background: linear-gradient(45deg, #BBE6F3, #F9E5BC);
+    // background: linear-gradient(45deg, #dd3540, #000000);
+    background: radial-gradient(#F3F3F5, #dde2e6);
+    p {
+        margin: 0;
+    }
+}
+
+.dashboardTop {
+    z-index: -99;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 100px;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+.left {
+    display: flex;
+    flex: 1;
+    justify-content: flex-start;
+    .poweredBy {
+        margin-bottom: 4px;
+        text-transform: uppercase;
+        font-size: 12px;
+        color: $TEXT_DARK;
+    }
+    .companyLogo {
+        height: 30px;
+        width: 120px;
+        background-image: url('../images/dashboard/company.png');
+        background-size: 100% 100%;
+    }
+}
+
+.center {
+    display: flex;
+    flex: 1;
+    .mainLogoContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .mainLogo {
+        margin-top: -25px;
+        height: 160px;
+        width: 160px;
+        background-image: url('../images/dashboard/mainLogo.png');
+        background-size: 100% 100%;
+    }
+    .logoText {
+        margin-top: -30px;
+        font-size: 30px;
+        font-weight: $RUBIK_MEDIUM;
+        color: $PRIMARY_COLOR;
+    }
+    .tagline {
+        // margin-top: 5px;
+        font-size: 14px;
+        font-weight: $RUBIK_REGULAR;
+        color: $TEXT_DARK;
+    }
+}
+
+.right {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: flex-end;
+    .userContainer {
+        cursor: default;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        .userImage {
+            height: 40px;
+            width: 40px;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+        .user-data-container {
+            display: flex;
+            align-items: center;
+        }
+        .userName {
+            margin-left: 10px;
+            font-size: 16px;
+            font-weight: $NUNITO_REGULAR; // color: $TEXT_AVG;
+            color: $TEXT_DARK;
+            transition-duration: $TRANSITION_SPEED;
+        }
+        .arrow-down {
+            margin-left: 5px;
+            width: 0;
+            height: 0;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-top: 5px solid $TEXT_AVG;
+            transition-duration: $TRANSITION_SPEED;
+        }
+        &:hover {
+            .userName {
+                color: $TEXT_DARK;
+            }
+            .arrow-down {
+                border-top: 5px solid $TEXT_DARK;
+            }
+        }
+    }
+}
+
+.hide_company_logo {
+    display: none;
+}
+
+.user-float-menu-container {
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+    top: 105px;
+    height: 150px;
+    width: 175px;
+    transition-duration: $TRANSITION_SPEED;
+}
+
+.user-float-menu-container.active {
+    opacity: 1; // background-color: red;
+}
+
+.user-float-menu {
+    padding: 5px;
+    box-sizing: border-box;
+    z-index: -2;
+    margin-top: 65px;
+    height: 85px;
+    width: 175px;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 4px 30px transparentize(black, 0.8);
+}
+
+.arrow-up {
+    float: right;
+    margin-right: 10px;
+    margin-top: -13px;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid white;
+}
+
+.menu-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 75px;
+}
+
+.menu-content-item {
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex: 1;
+    border-radius: 5px;
+    transition-duration: $TRANSITION_SPEED;
+    &:hover {
+        background-color: #eee;
+        .menu-text {
+            color: $TEXT_DARK;
+        }
+    }
+}
+
+.menu-content-item.logout {
+    &:hover {
+        background-color: $RED;
+        .menu-text {
+            color: white;
+        }
+    }
+}
+
+.menu-text {
+    font-size: 15px;
+    font-weight: $NUNITO_REGULAR;
+    color: $TEXT_AVG;
+    transition-duration: $TRANSITION_SPEED;
+}
+
+// bottom section
+.dashboardBody {
+    flex: 2;
+}
+
+.row_one,
+.row_two {
+    display: flex;
+    flex-direction: row;
+}
+
+.row_two {
+    margin-top: 25px;
+}
+
+.dashCard {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 25px;
+    height: 150px;
+    width: 200px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.15);
+    transition-duration: $TRANSITION_SPEED_SLOW;
+    .drop {
+        margin: 25px 0 18px 0;
+        height: 6px;
+        width: 6px;
+        border-radius: 3px;
+        background-color: rgba(0, 0, 0, 0.15);
+    }
+    .dashIcon {
+        height: 36px;
+        width: 36px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .dashText {
+        font-size: 16px;
+        font-weight: $RUBIK_LIGHT; // color: $TEXT_LIGHT;
+        color: $TEXT_DARK;
+    }
+    &:hover {
+        background-color: white;
+        transform: scale(1.03, 1.03);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.25);
+    }
+}
+
+.dashCard.left {
+    margin-right: 0;
+}
+
+.dashCard.right {
+    margin-left: 0;
+}

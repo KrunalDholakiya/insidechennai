@@ -1,0 +1,184 @@
+@import "./_base";
+@import "./_vars";
+.landing-main {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-color: black;
+}
+
+.fulll {
+    height: 100vh;
+    width: 100vw;
+}
+
+.absolute-video-container {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.landing-overlay-container {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%; // background-color: rgba(46, 51, 91, 0.25);
+    .top {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        height: 150px;
+        padding-bottom: 15px; // background-color: red;
+        .landing-logo {
+            height: 120px;
+            width: 164px;
+            background-size: 100% 100%;
+            background-image: url('../images/landing/landing-logo.png')
+        }
+    }
+    .middle {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex: 1; // background-color: black;
+        .explore {
+            // margin-top: 30px;
+            height: 82px;
+            width: 536px;
+            background-size: 100% 100%;
+            background-image: url('../images/landing/explore.png')
+        }
+    }
+    .bottom {
+        padding: 0 50px;
+        height: 120px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; // background-color: blue;
+        .bottom-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .explore {
+            height: 40px;
+            width: 300px;
+            background-size: 100% 100%;
+            background-image: url('../images/landing/explore.png')
+        }
+        .continue-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            p {
+                cursor: pointer;
+                margin-bottom: 0;
+                font-weight: $NUNITO_SEMIBOLD;
+                font-size: 16px;
+                color: white;
+                opacity: 0.8;
+                transition-duration: $TRANSITION_SPEED_SLOW;
+                &:hover {
+                    opacity: 1;
+                }
+            }
+            .continue-icon {
+                cursor: pointer;
+                height: 28px;
+                width: 28px;
+                background-size: 100% 100%;
+                background-image: url('../images/landing/continue-arrow.png')
+            }
+        }
+    }
+}
+
+.ms-main {
+    height: 100vh;
+    width: 100vw;
+    background-image: url('../images/landing/swaminarayan.jpg');
+    background-size: cover;
+    background-position: center top;
+}
+
+.continue-holder {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    height: 150px;
+    width: 100vw;
+    background-image: linear-gradient(to top, rgba($color: $PRIMARY_COLOR, $alpha: 0.8), rgba($color: $PRIMARY_COLOR, $alpha: 0.5), transparent);
+    p {
+        margin-top: -80px;
+        font-weight: $NUNITO_SEMIBOLD;
+        font-size: 20px;
+        color: #ee5253;
+    }
+    button {
+        margin-top: 60px;
+        cursor: pointer;
+        max-height: 50px;
+        padding: 10px 50px;
+        font-weight: $NUNITO_SEMIBOLD;
+        font-size: 16px;
+        color: $PRIMARY_COLOR;
+        text-transform: uppercase;
+        background-color: #fff;
+        border-radius: 25px;
+        transition-duration: $TRANSITION_SPEED;
+        box-shadow: 0 4px 30px transparentize(black, 0.8);
+        &:active {
+            outline: 0;
+        }
+        &:hover {
+            outline: 0;
+            transform: scale(1.05, 1.05);
+            box-shadow: 0 -10px -30px transparentize(black, 0.25);
+        }
+    }
+}
+
+.logo-overlay-holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-image: url('../images/landing/logo-bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.logo-overlay-container {
+    display: flex;
+    flex-direction: column; // justify-content: center;
+    align-items: center;
+    .landing-logo {
+        height: 180px;
+        width: 246px;
+        margin-bottom: 10px;
+        background-size: 100% 100%;
+        background-image: url('../images/landing/logo-landing.png');
+    }
+    .logo-overlay-container {
+        flex-direction: row;
+    }
+    p {
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 0;
+        font-weight: $NUNITO_SEMIBOLD;
+        font-size: 16px;
+        color: white;
+    }
+}

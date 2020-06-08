@@ -1,0 +1,139 @@
+@import "./_vars";
+@import "./header";
+@import '../../../node_modules/loaders.css/src/animations/ball-pulse-sync.scss';
+.loader-hidden {
+    display: none;
+}
+
+.loader-active {
+    display: block;
+}
+
+// helpers
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+}
+
+p {
+    margin: 0;
+}
+
+.black-box {
+    height: 100px;
+    background-color: black;
+}
+
+.blue-box {
+    height: 100px;
+    background-color: blue;
+}
+
+.flexCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.textCenter {
+    text-align: center;
+}
+
+.page {
+    height: 100%;
+    width: 100%;
+}
+
+.main-app-space {
+    margin-top: 50px;
+    width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+.main-app-container {
+    display: block;
+    width: 100%;
+}
+
+h1 {
+    //font-family: $MONT !important;
+    text-align: center;
+    font-weight: $MONT_REGULAR !important;
+    font-size: 45px !important;
+    color: $PRIMARY_COLOR !important;
+}
+
+h2 {
+    //font-family: $PLAY !important;
+    text-align: center;
+    font-weight: $PLAY_BOLD !important;
+    font-size: 40px !important;
+    color: $PRIMARY_COLOR !important;
+}
+
+h3 {
+    text-align: center; //font-family: $PLAY !important;
+    font-weight: $PLAY_BOLD !important;
+    padding-bottom: 10px;
+    font-weight: 500;
+    font-size: 35px !important;
+    color: #1e2930 !important;
+    opacity: 0.8;
+}
+
+h6 {
+    //font-family: $NUNITO !important;
+    text-align: center;
+    font-weight: $NUNITO_REGULAR !important;
+    font-size: 15px !important;
+    color: $SECONDARY_COLOR !important;
+}
+
+.bread-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.breadcrumb {
+    margin-bottom: 0;
+    padding: auto;
+    border-radius: 15px;
+    font-size: 10px;
+    color: $TEXT_DARK;
+    text-transform: uppercase;
+    .breadcrumb-item {
+        a {
+            text-decoration: none;
+            color: $TEXT_AVG;
+            transition-duration: $TRANSITION_SPEED;
+            &:hover {
+                color: $PRIMARY_COLOR;
+            }
+        }
+    }
+    .breadcrumb-item.nope {
+        cursor: default;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    h1 {
+        font-size: 40px !important;
+    }
+    h2 {
+        font-size: 35px !important;
+    }
+    h3 {
+        font-size: 30px !important;
+    }
+}
